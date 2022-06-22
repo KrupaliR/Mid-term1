@@ -16,20 +16,21 @@ import java.util.Scanner;
 public class ArithmeticBase 
 {
  public double x,y;
- enum l 
+ private enum l 
  {
      PLUS,
      MINUS,
      TIMES,
      DIVIDE,
  }
-    double calculate(double x, double y) 
+    public String getl(double x, double y) 
         {
-        Scanner sc =new Scanner(System.in);
+        /*Scanner sc =new Scanner(System.in);
         System.out.println("Enter arithmetic operation to Perform: ");
-        String s= sc.next();
-        enum l L;
-        switch (s.uppercase()) 
+        String s= sc.next();*/
+        this.x = x;
+        this.y = y;
+        switch (l) 
         {
             case PLUS:
                 return x + y;
