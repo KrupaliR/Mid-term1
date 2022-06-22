@@ -25,11 +25,11 @@ public class ArithmeticBase
  }
     double calculate(double x, double y) 
         {
-        /*Scanner sc =new Scanner(System.in);
+        Scanner sc =new Scanner(System.in);
         System.out.println("Enter arithmetic operation to Perform: ");
-        String s= sc.next();*/
+        String s= sc.next();
         enum l L;
-        switch (L) 
+        switch (s.uppercase()) 
         {
             case PLUS:
                 return x + y;
